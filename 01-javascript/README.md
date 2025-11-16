@@ -70,7 +70,7 @@ let infinito = Infinity;
 let noNumero = NaN;
 ```
 
-3. ***booelan***. Valores lógicos: true o false
+3. ***boolean***. Valores lógicos: true o false
 ```js
 let activo = true;
 let mayor = false;

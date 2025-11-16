@@ -8,7 +8,7 @@ console.log(precio);
 precio = 20.5;
 console.log(precio);
 
-let nombre = "Junan";
+let nombre = "Juan";
 console.log(nombre);
 
 const PI = 3.1416;
