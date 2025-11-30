@@ -9,12 +9,13 @@
 async function getUppercaseTitlesByUser(userId = 1) {
     const respuesta = await fetch('https://jsonplaceholder.typicode.com/posts');
     const posts = await respuesta.json();
-    const filtrados = posts.filter((post) => {
-        return post.userId === userId;
-    });
-    const tratados = posts.filter((post) => post.userId === userId)
-        .map((f) => ({...f, title: f.title.toUpperCase()}))
-    console.log(tratados);
+    const filtrados = posts
+        .filter((post) => post.userId === userId)
+        .map(post=> ({
+            ...post,
+            title: post.title.toUpperCase()
+        }));
+    console.log(filtrados);
 }
 
 getUppercaseTitlesByUser(1);
