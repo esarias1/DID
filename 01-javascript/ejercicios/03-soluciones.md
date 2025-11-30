@@ -115,11 +115,11 @@ export function areaCuadrado(lado) {
 }
 ```
 ```js
-import { areaCirculo, areaCuadrado } from "./matematicas.js";
+import { areaCirculo as circulo, areaCuadrado as cuadrado} from "./matematicas.js";
 const radio = 3;
 const lado = 3;
-console.log(`Área de círculo con radio ${radio}: ${areaCirculo(radio)}`);
-console.log(`Área cuadrado con lado ${lado}: ${areaCuadrado(lado)}`);
+console.log(`Área de círculo con radio ${radio}: ${circulo(radio)}`);
+console.log(`Área cuadrado con lado ${lado}: ${cuadrado(lado)}`);
 ```
 
 ---
